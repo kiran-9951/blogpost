@@ -1,0 +1,74 @@
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: hsla(114, 16%, 75%, 0.877);
+    color: rgb(17, 17, 17);
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav_container a {
+    color: rgb(14, 12, 12);
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+  }
+  
+  .nav_container a:hover {
+    color: #f1eded;
+  }
+  
+  .search-input {
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  
+  
+  .signup{
+    padding: 8px 12px;
+    border-radius: 4px;
+    
+  }
+
+  
+  @media (max-width: 768px) {
+    .nav_container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+
+    .nav_container a {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+  
+    .search-input {
+      margin: 10px 0;
+      width: 100%; 
+    }
+
+    .signup, .login {
+      margin-top: 10px;
+      width: 100%; 
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .nav_container {
+      padding: 5px; 
+    }
+
+    .nav_container a {
+      font-size: 14px;
+    }
+
+    .search-input {
+      font-size: 14px;
+    }
+  }
